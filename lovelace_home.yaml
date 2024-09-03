@@ -1,0 +1,689 @@
+title: Home2
+views:
+  - path: default_view
+    title: Home
+    cards:
+      - square: false
+        type: grid
+        cards:
+          - square: false
+            type: grid
+            cards:
+              - type: weather-forecast
+                entity: weather.forecast_home
+                forecast_type: daily
+              - aspect_ratio: 80%
+                title: Regenradar
+                type: iframe
+                url: >-
+                  https://embed.windy.com/embed2.html?lat=52.676&lon=10.080&zoom=6&level=surface&overlay=rain&menu=&message=&marker=true&calendar=&pressure=&type=map&location=coordinates&detail=&detailLat=52.617&detailLon=10.083&metricWind=km%2Fh&metricTemp=%C2%B0C&radarRange=-1
+            columns: 1
+        columns: 1
+  - title: Wohnzimmer
+    path: wohnzimmer
+    icon: mdi:television
+    badges: []
+    cards:
+      - type: grid
+        cards:
+          - type: grid
+            cards:
+              - show_name: true
+                show_icon: true
+                type: button
+                tap_action:
+                  action: toggle
+                entity: light.dev04
+                name: Lampe PC
+              - type: button
+                tap_action:
+                  action: toggle
+                entity: light.dev80_l1
+                name: Schrank links
+              - type: button
+                tap_action:
+                  action: toggle
+                entity: light.dev80_l3
+                name: Schrank mitte
+              - type: button
+                tap_action:
+                  action: toggle
+                entity: light.dev80_l2
+                name: Schrank rechts
+            columns: 4
+            square: false
+          - type: grid
+            cards:
+              - graph: line
+                type: sensor
+                entity: sensor.dev406_am2301_temperature
+                name: Temperatur
+                unit: °C
+                detail: 1
+              - graph: line
+                type: sensor
+                entity: sensor.dev406_am2301_humidity
+                icon: mdi:water
+                unit: '%'
+                name: Luftfeuchtigkeit
+                detail: 1
+            columns: 2
+            square: false
+          - type: grid
+            cards:
+              - show_name: true
+                show_icon: true
+                type: button
+                tap_action:
+                  action: more-info
+                icon: mdi:run
+                name: Bewegung
+                hold_action:
+                  action: more-info
+                show_state: false
+                entity: binary_sensor.dev406_switch1
+              - type: light
+                entity: light.dev406
+                name: Ambi Licht WZ
+            square: false
+            columns: 2
+        columns: 1
+        square: false
+  - title: Garten
+    path: garten
+    icon: mdi:flower
+    badges: []
+    cards:
+      - type: grid
+        cards:
+          - type: grid
+            cards:
+              - type: light
+                name: Wand
+                entity: light.dev50_r5
+              - type: light
+                entity: light.dev50_r7
+                name: Boden
+              - type: light
+                entity: light.dev50_r3
+                icon: mdi:lamp
+                name: Steh links
+              - type: light
+                entity: light.dev50_r6
+                name: Steh rechts
+              - type: light
+                entity: light.dev50_r1
+                name: Strahler 1
+              - type: light
+                entity: light.dev50_r4
+                name: Strahler 2
+            square: false
+            columns: 3
+          - type: grid
+            cards:
+              - type: button
+                tap_action:
+                  action: toggle
+                entity: light.dev01
+                name: Pool
+              - type: button
+                tap_action:
+                  action: toggle
+                entity: light.dev50_r2
+                name: Brunnen
+            columns: 2
+            square: false
+          - type: grid
+            cards:
+              - type: sensor
+                graph: line
+                entity: sensor.dev28_temperature_dht
+                name: Außen
+                unit: °C
+              - type: sensor
+                graph: line
+                entity: sensor.dev28_temperature_dht1
+                name: Innen
+                unit: °C
+              - type: sensor
+                graph: line
+                entity: sensor.dev28_humidity_dht
+                name: Außen
+                icon: mdi:water
+                unit: '%'
+              - type: sensor
+                graph: line
+                entity: sensor.dev28_humidity_dht1
+                name: Innen
+                icon: mdi:water
+                unit: '%'
+            columns: 2
+            square: false
+        square: false
+        columns: 1
+  - title: Geräte
+    path: gerate
+    icon: mdi:garage-open-variant
+    badges: []
+    cards:
+      - type: grid
+        cards:
+          - type: grid
+            cards:
+              - type: light
+                entity: light.dev408
+                name: Holz
+              - type: light
+                entity: light.dev62
+                name: Carport
+              - type: light
+                entity: light.dev63
+                name: Gartenhaus
+            square: false
+          - type: grid
+            cards:
+              - show_name: true
+                show_icon: true
+                type: button
+                entity: binary_sensor.dev408_switch1
+                icon: mdi:run
+                tap_action:
+                  action: more-info
+                name: Holz
+              - type: button
+                tap_action:
+                  action: more-info
+                entity: binary_sensor.dev62_motion
+                name: Carport
+                icon: mdi:run
+              - type: button
+                tap_action:
+                  action: more-info
+                entity: binary_sensor.dev63_motion
+                name: Gartenhaus
+                icon: mdi:run
+              - type: button
+                tap_action:
+                  action: more-info
+                entity: binary_sensor.dev71_motion
+                name: Schuppen
+                icon: mdi:run
+            square: false
+            columns: 2
+          - type: grid
+            cards:
+              - type: sensor
+                graph: line
+                entity: sensor.dev71_temperature_dht
+                name: Schuppen
+                unit: °C
+              - graph: line
+                type: sensor
+                entity: sensor.dev71_humidity_dht
+                name: Schuppen
+                icon: mdi:water
+                unit: '%'
+                detail: 1
+            columns: 2
+            square: false
+          - type: grid
+            cards:
+              - type: entity
+                entity: binary_sensor.dev301_garb_rest
+                name: Restmüll
+                icon: mdi:delete
+                state_color: true
+              - type: entity
+                entity: binary_sensor.dev301_garb_organic
+                name: Bioabfall
+                icon: mdi:delete
+                state_color: true
+              - type: entity
+                entity: binary_sensor.dev301_garb_paper
+                name: Papier
+                icon: mdi:delete
+                state_color: true
+              - type: entity
+                entity: binary_sensor.dev301_garb_plastic
+                name: Gelber Sack
+                icon: mdi:delete
+                state_color: true
+            columns: 2
+            square: false
+        square: false
+        columns: 1
+  - title: Flur
+    path: flur
+    icon: mdi:stairs
+    badges: []
+    cards:
+      - type: grid
+        cards:
+          - type: grid
+            cards:
+              - type: light
+                entity: light.dev400
+                name: Ambi Licht Oben
+              - type: light
+                entity: light.dev407
+                name: Ambi Licht Unten
+            columns: 2
+            square: false
+          - type: grid
+            cards:
+              - show_name: true
+                show_icon: true
+                type: button
+                tap_action:
+                  action: more-info
+                entity: binary_sensor.dev400_switch1
+                name: Oben
+                icon: mdi:run
+              - show_name: true
+                show_icon: true
+                type: button
+                tap_action:
+                  action: more-info
+                entity: binary_sensor.dev407_switch1
+                name: Unten
+                icon: mdi:run
+            columns: 2
+            square: false
+          - type: grid
+            cards:
+              - type: sensor
+                graph: line
+                entity: sensor.dev400_am2301_temperature
+                name: Oben
+                unit: °C
+              - type: sensor
+                graph: line
+                entity: sensor.dev407_am2301_temperature
+                unit: °C
+                name: Unten
+              - type: sensor
+                graph: line
+                entity: sensor.dev400_am2301_humidity
+                name: Oben
+                icon: mdi:water
+                unit: '%'
+              - type: sensor
+                graph: line
+                entity: sensor.dev407_am2301_humidity
+                name: Unten
+                icon: mdi:water
+                unit: '%'
+            columns: 2
+            square: false
+          - square: true
+            type: grid
+            cards:
+              - show_name: true
+                show_icon: true
+                type: button
+                tap_action:
+                  action: toggle
+                entity: switch.lidl_relay3
+                name: Kugeln
+                icon: mdi:lamp
+            columns: 1
+        columns: 1
+        square: false
+  - title: Bad
+    path: bad
+    icon: mdi:bathtub
+    badges: []
+    cards:
+      - type: grid
+        cards:
+          - type: grid
+            cards:
+              - graph: line
+                type: sensor
+                entity: sensor.sensor_xia_firbath_sensor_xia_firbath_temperature
+                name: Gäste T
+                unit: °C
+                detail: 1
+              - type: gauge
+                min: 0
+                max: 100
+                entity: sensor.sensor_xia_firbath_sensor_xia_firbath_battery
+                name: Gäste B
+                unit: '%'
+                severity:
+                  green: 50
+                  yellow: 30
+                  red: 0
+              - graph: line
+                type: sensor
+                entity: sensor.sensor_xia_firbath_sensor_xia_firbath_humidity
+                icon: mdi:water
+                name: Gäste H
+                detail: 1
+            square: false
+          - type: grid
+            cards:
+              - graph: line
+                type: sensor
+                entity: sensor.sensor_xia_secbath_sensor_xia_secbath_temperature
+                name: Bad T
+                detail: 1
+              - type: gauge
+                min: 0
+                max: 100
+                entity: sensor.sensor_xia_secbath_sensor_xia_secbath_battery
+                name: Bad B
+                unit: '%'
+                severity:
+                  green: 50
+                  yellow: 30
+                  red: 0
+              - graph: line
+                type: sensor
+                name: Bad H
+                icon: mdi:water
+                unit: '%'
+                detail: 1
+                entity: sensor.sensor_xia_secbath_sensor_xia_secbath_humidity
+            square: false
+        columns: 1
+        square: false
+  - title: Schlafzimmer
+    path: schlafzimmer
+    icon: mdi:bed
+    badges: []
+    cards:
+      - type: grid
+        cards:
+          - type: grid
+            cards:
+              - graph: line
+                type: sensor
+                entity: sensor.sensor_xia_parent_sensor_xia_parent_temperature
+                name: Eltern T
+                unit: °C
+                detail: 1
+              - type: gauge
+                min: 0
+                max: 100
+                entity: sensor.sensor_xia_parent_sensor_xia_parent_humidity
+                name: Eltern B
+                unit: '%'
+                severity:
+                  green: 50
+                  yellow: 30
+                  red: 0
+              - graph: line
+                type: sensor
+                entity: sensor.sensor_xia_parent_sensor_xia_parent_humidity
+                name: Eltern H
+                icon: mdi:water
+                unit: '%'
+                detail: 1
+            square: false
+          - type: grid
+            cards:
+              - graph: line
+                type: sensor
+                entity: sensor.sensor_xia_offi_sensor_xia_offi_temperature
+                name: Gäste T
+                unit: °C
+                detail: 1
+              - type: gauge
+                min: 0
+                max: 100
+                entity: sensor.sensor_xia_offi_sensor_xia_offi_battery
+                name: Gäste B
+                unit: '%'
+                severity:
+                  green: 50
+                  yellow: 30
+                  red: 0
+              - graph: line
+                type: sensor
+                entity: sensor.sensor_xia_offi_sensor_xia_offi_humidity
+                name: Gäste H
+                icon: mdi:water
+                detail: 1
+          - type: grid
+            cards:
+              - graph: line
+                type: sensor
+                entity: sensor.sensor_xia_child_sensor_xia_child_temperature
+                name: Kind T
+                unit: °C
+                detail: 1
+              - type: gauge
+                min: 0
+                max: 100
+                entity: sensor.sensor_xia_child_sensor_xia_child_battery
+                name: Kind B
+                unit: '%'
+                severity:
+                  green: 50
+                  yellow: 30
+                  red: 0
+              - graph: line
+                type: sensor
+                entity: sensor.sensor_xia_child_sensor_xia_child_humidity
+                name: Kind H
+                icon: mdi:water
+                detail: 1
+            square: false
+          - type: grid
+            cards:
+              - show_name: true
+                show_icon: true
+                type: button
+                tap_action:
+                  action: toggle
+                entity: switch.lidl_relay1
+                name: Arbeit
+              - type: gauge
+                entity: sensor.lidl_switch1_batt
+                max: 100
+                name: Battery
+                unit: '%'
+                min: 0
+                severity:
+                  green: 50
+                  yellow: 30
+                  red: 0
+              - type: button
+                tap_action:
+                  action: toggle
+                entity: switch.lidl_power6
+                name: Arbeitsbereich
+                icon: mdi:lamp
+            columns: 3
+            square: false
+          - square: false
+            type: grid
+            cards:
+              - type: entity
+                entity: sensor.hp_color_laser_mfp_179fnw
+            columns: 1
+          - square: true
+            type: grid
+            cards:
+              - type: entity
+                entity: >-
+                  sensor.hp_color_laser_mfp_179fnw_black_toner_s_n_crum_220106a1d91
+                name: Black
+              - type: entity
+                entity: >-
+                  sensor.hp_color_laser_mfp_179fnw_cyan_toner_s_n_crum_210914a9ac5
+                name: Cyan
+              - type: entity
+                entity: >-
+                  sensor.hp_color_laser_mfp_179fnw_magenta_toner_s_n_crum_210615ac892
+                name: Magenta
+              - type: entity
+                entity: >-
+                  sensor.hp_color_laser_mfp_179fnw_yellow_toner_s_n_crum_240201a60fe
+                name: Yellow
+            columns: 4
+        columns: 1
+        square: false
+  - icon: mdi:door-sliding
+    badges: []
+    cards:
+      - type: grid
+        cards:
+          - type: grid
+            cards:
+              - show_name: true
+                show_icon: true
+                type: button
+                tap_action:
+                  action: toggle
+                entity: switch.dev401_relay1
+                icon: mdi:lamp
+                name: Front
+                hold_action:
+                  action: more-info
+              - show_name: true
+                show_icon: true
+                type: button
+                tap_action:
+                  action: toggle
+                entity: switch.dev401_relay2
+                icon: mdi:lamp
+                name: Boden
+                hold_action:
+                  action: more-info
+              - show_name: true
+                show_icon: true
+                type: button
+                tap_action:
+                  action: toggle
+                entity: switch.dev401_relay3
+                name: Power
+                icon: mdi:power-socket-de
+                hold_action:
+                  action: more-info
+              - show_name: true
+                show_icon: true
+                type: button
+                tap_action:
+                  action: toggle
+                entity: switch.dev401_relay4
+                name: Unbenutzt
+                icon: mdi:lamp-outline
+                hold_action:
+                  action: more-info
+            columns: 2
+            square: false
+          - show_name: true
+            show_icon: true
+            type: button
+            tap_action:
+              action: more-info
+            entity: binary_sensor.dev401_switch1
+            icon: mdi:motion-sensor
+            name: Bewegung
+        columns: 1
+        square: false
+  - title: HWR
+    path: hwr
+    icon: mdi:electron-framework
+    badges: []
+    cards:
+      - type: grid
+        cards:
+          - type: grid
+            cards:
+              - show_name: true
+                show_icon: true
+                type: button
+                tap_action:
+                  action: more-info
+                entity: binary_sensor.sonoff_move1
+                name: HWR
+                icon: mdi:run
+              - show_name: true
+                show_icon: true
+                type: button
+                tap_action:
+                  action: toggle
+                entity: switch.lidl_relay6
+                name: HWR Licht
+                icon: mdi:lamp
+              - graph: line
+                type: sensor
+                entity: sensor.sonoff_measure1_temp
+                name: HWR
+                unit: °C
+                detail: 1
+              - graph: line
+                type: sensor
+                entity: sensor.sonoff_measure1_hum
+                name: HWR
+                unit: '%'
+                detail: 1
+              - type: gauge
+                entity: sensor.ewelink_ms01_batterie
+                min: 0
+                max: 100
+                name: Beweg
+                unit: '%'
+                severity:
+                  green: 50
+                  yellow: 30
+                  red: 0
+              - type: gauge
+                entity: sensor.ewelink_th01_batterie
+                min: 0
+                max: 100
+                name: Mess
+                unit: '%'
+                severity:
+                  green: 50
+                  yellow: 30
+                  red: 0
+            square: false
+            columns: 2
+        square: false
+        columns: 1
+  - title: Weihnachten
+    path: weihnachten
+    icon: mdi:candelabra-fire
+    badges: []
+    cards:
+      - type: grid
+        cards:
+          - type: grid
+            cards:
+              - type: button
+                tap_action:
+                  action: toggle
+                entity: light.dev01
+                icon: mdi:lamp
+                name: Garten
+              - type: button
+                tap_action:
+                  action: toggle
+                entity: switch.lidl_power5
+                icon: mdi:lamp
+                name: Pyramide
+              - type: button
+                tap_action:
+                  action: toggle
+                entity: switch.tasmota3
+                icon: mdi:lamp
+                name: Haustür
+            columns: 2
+            square: false
+        columns: 1
+        square: false
+  - title: Alarm Control
+    path: alarm-control
+    icon: mdi:alarm-light
+    badges: []
+    cards:
+      - type: alarm-panel
+        states:
+          - arm_away
+          - arm_night
+        entity: alarm_control_panel.ha_alarm
+        name: Alarm Control
