@@ -1,0 +1,622 @@
+- id: '1727410045953'
+  name: Test an
+  entities:
+    light.dev406:
+      effect_list:
+      - Solid
+      - Wake up
+      - Cycle up
+      - Cycle down
+      - Random
+      supported_color_modes:
+      - hs
+      effect: Solid
+      color_mode: hs
+      brightness: 224
+      hs_color:
+      - 60
+      - 29
+      rgb_color:
+      - 255
+      - 255
+      - 181
+      xy_color:
+      - 0.373
+      - 0.407
+      friendly_name: dev406
+      supported_features: 36
+      state: 'on'
+  icon: mdi:lightbulb
+  metadata: {}
+- id: '1727410387771'
+  name: Garten Abend An
+  entities:
+    light.dev50_r1:
+      supported_color_modes:
+      - onoff
+      color_mode: onoff
+      friendly_name: dev50_r1
+      supported_features: 0
+      state: 'on'
+    light.dev50_r7:
+      supported_color_modes:
+      - onoff
+      color_mode: onoff
+      friendly_name: dev50_r7
+      supported_features: 0
+      state: 'on'
+    light.dev50_r4:
+      supported_color_modes:
+      - onoff
+      color_mode: onoff
+      friendly_name: dev50_r4
+      supported_features: 0
+      state: 'on'
+  icon: mdi:flower
+  metadata:
+    light.dev50_r1:
+      entity_only: true
+    light.dev50_r7:
+      entity_only: true
+    light.dev50_r4:
+      entity_only: true
+- id: '1727410499639'
+  name: Garten Abend Aus
+  entities:
+    light.dev50_r1:
+      supported_color_modes:
+      - onoff
+      color_mode:
+      friendly_name: dev50_r1
+      supported_features: 0
+      state: 'off'
+    light.dev50_r7:
+      supported_color_modes:
+      - onoff
+      color_mode:
+      friendly_name: dev50_r7
+      supported_features: 0
+      state: 'off'
+    light.dev50_r4:
+      supported_color_modes:
+      - onoff
+      color_mode:
+      friendly_name: dev50_r4
+      supported_features: 0
+      state: 'off'
+  icon: mdi:flower
+  metadata:
+    light.dev50_r1:
+      entity_only: true
+    light.dev50_r7:
+      entity_only: true
+    light.dev50_r4:
+      entity_only: true
+- id: '1727636466377'
+  name: Test aus
+  entities:
+    light.dev406:
+      effect_list:
+      - Solid
+      - Wake up
+      - Cycle up
+      - Cycle down
+      - Random
+      supported_color_modes:
+      - hs
+      effect:
+      color_mode:
+      brightness:
+      hs_color:
+      rgb_color:
+      xy_color:
+      friendly_name: dev406
+      supported_features: 36
+      state: 'off'
+    light.dev407:
+      effect_list:
+      - Solid
+      - Wake up
+      - Cycle up
+      - Cycle down
+      - Random
+      supported_color_modes:
+      - hs
+      effect:
+      color_mode:
+      brightness:
+      hs_color:
+      rgb_color:
+      xy_color:
+      friendly_name: dev407
+      supported_features: 36
+      state: 'off'
+    light.dev400:
+      effect_list:
+      - Solid
+      - Wake up
+      - Cycle up
+      - Cycle down
+      - Random
+      supported_color_modes:
+      - hs
+      effect: Solid
+      color_mode: hs
+      brightness: 125
+      hs_color:
+      - 0
+      - 0
+      rgb_color:
+      - 255
+      - 255
+      - 255
+      xy_color:
+      - 0.323
+      - 0.329
+      friendly_name: dev400
+      supported_features: 36
+      state: 'on'
+  icon: mdi:lightbulb
+  metadata: {}
+- id: '1727668890190'
+  name: Alarm Blau
+  entities:
+    light.dev406:
+      effect_list:
+      - Solid
+      - Wake up
+      - Cycle up
+      - Cycle down
+      - Random
+      supported_color_modes:
+      - hs
+      effect: Solid
+      color_mode: hs
+      brightness: 255
+      hs_color:
+      - 229
+      - 98
+      rgb_color:
+      - 5
+      - 50
+      - 255
+      xy_color:
+      - 0.137
+      - 0.057
+      friendly_name: dev406
+      supported_features: 36
+      state: 'on'
+    light.dev407:
+      effect_list:
+      - Solid
+      - Wake up
+      - Cycle up
+      - Cycle down
+      - Random
+      supported_color_modes:
+      - hs
+      effect: Solid
+      color_mode: hs
+      brightness: 255
+      hs_color:
+      - 229
+      - 98
+      rgb_color:
+      - 5
+      - 50
+      - 255
+      xy_color:
+      - 0.137
+      - 0.057
+      friendly_name: dev407
+      supported_features: 36
+      state: 'on'
+    light.dev400:
+      effect_list:
+      - Solid
+      - Wake up
+      - Cycle up
+      - Cycle down
+      - Random
+      supported_color_modes:
+      - hs
+      effect: Solid
+      color_mode: hs
+      brightness: 125
+      hs_color:
+      - 229
+      - 98
+      rgb_color:
+      - 5
+      - 50
+      - 255
+      xy_color:
+      - 0.137
+      - 0.057
+      friendly_name: dev400
+      supported_features: 36
+      state: 'on'
+  icon: mdi:alarm-light
+  metadata: {}
+- id: '1727668923860'
+  name: Test Rot
+  entities:
+    light.dev406:
+      effect_list:
+      - Solid
+      - Wake up
+      - Cycle up
+      - Cycle down
+      - Random
+      supported_color_modes:
+      - hs
+      effect: Solid
+      color_mode: hs
+      brightness: 255
+      hs_color:
+      - 1
+      - 89
+      rgb_color:
+      - 255
+      - 31
+      - 28
+      xy_color:
+      - 0.686
+      - 0.301
+      friendly_name: dev406
+      supported_features: 36
+      state: 'on'
+  icon: mdi:lightbulb
+  metadata: {}
+- id: '1730697784286'
+  name: Alarm Rot
+  entities:
+    light.dev406:
+      effect_list:
+      - Solid
+      - Wake up
+      - Cycle up
+      - Cycle down
+      - Random
+      supported_color_modes:
+      - hs
+      effect: Solid
+      color_mode: hs
+      brightness: 255
+      hs_color:
+      - 9
+      - 100
+      rgb_color:
+      - 255
+      - 38
+      - 0
+      xy_color:
+      - 0.691
+      - 0.307
+      friendly_name: dev406
+      supported_features: 36
+      state: 'on'
+    light.dev407:
+      effect_list:
+      - Solid
+      - Wake up
+      - Cycle up
+      - Cycle down
+      - Random
+      supported_color_modes:
+      - hs
+      effect: Solid
+      color_mode: hs
+      brightness: 255
+      hs_color:
+      - 9
+      - 100
+      rgb_color:
+      - 255
+      - 38
+      - 0
+      xy_color:
+      - 0.691
+      - 0.307
+      friendly_name: dev407
+      supported_features: 36
+      state: 'on'
+    light.dev400:
+      effect_list:
+      - Solid
+      - Wake up
+      - Cycle up
+      - Cycle down
+      - Random
+      supported_color_modes:
+      - hs
+      effect: Solid
+      color_mode: hs
+      brightness: 255
+      hs_color:
+      - 9
+      - 100
+      rgb_color:
+      - 255
+      - 38
+      - 0
+      xy_color:
+      - 0.691
+      - 0.307
+      friendly_name: dev400
+      supported_features: 36
+      state: 'on'
+  icon: mdi:alarm-light
+  metadata: {}
+- id: '1730744346266'
+  name: Außenbeleuchtung An
+  entities:
+    light.dev50_r1:
+      supported_color_modes:
+      - onoff
+      color_mode: onoff
+      friendly_name: dev50_r1
+      supported_features: 0
+      state: 'on'
+    light.dev50_r7:
+      supported_color_modes:
+      - onoff
+      color_mode: onoff
+      friendly_name: dev50_r7
+      supported_features: 0
+      state: 'on'
+    light.dev50_r4:
+      supported_color_modes:
+      - onoff
+      color_mode: onoff
+      friendly_name: dev50_r4
+      supported_features: 0
+      state: 'on'
+    light.dev408:
+      supported_color_modes:
+      - onoff
+      color_mode: onoff
+      friendly_name: dev408
+      supported_features: 0
+      state: 'on'
+    light.dev62:
+      supported_color_modes:
+      - onoff
+      color_mode: onoff
+      friendly_name: dev62
+      supported_features: 0
+      state: 'on'
+    light.dev63:
+      supported_color_modes:
+      - onoff
+      color_mode: onoff
+      friendly_name: dev63
+      supported_features: 0
+      state: 'on'
+    switch.dev401_relay1:
+      friendly_name: dev401 relay1
+      state: 'on'
+    switch.dev401_relay2:
+      friendly_name: dev401 relay2
+      state: 'on'
+    light.dev50_r3:
+      supported_color_modes:
+      - onoff
+      color_mode: onoff
+      friendly_name: dev50_r3
+      supported_features: 0
+      state: 'on'
+    light.dev50_r6:
+      supported_color_modes:
+      - onoff
+      color_mode: onoff
+      friendly_name: dev50_r6
+      supported_features: 0
+      state: 'on'
+    light.dev50_r5:
+      supported_color_modes:
+      - onoff
+      color_mode: onoff
+      friendly_name: dev50_r5
+      supported_features: 0
+      state: 'on'
+  icon: mdi:garage
+  metadata:
+    light.dev50_r1:
+      entity_only: true
+    light.dev50_r7:
+      entity_only: true
+    light.dev50_r4:
+      entity_only: true
+    light.dev408:
+      entity_only: true
+    light.dev62:
+      entity_only: true
+    light.dev63:
+      entity_only: true
+    switch.dev401_relay1:
+      entity_only: true
+    switch.dev401_relay2:
+      entity_only: true
+    light.dev50_r3:
+      entity_only: true
+    light.dev50_r6:
+      entity_only: true
+    light.dev50_r5:
+      entity_only: true
+- id: '1730744402181'
+  name: Außenbeleuchtung Aus
+  entities:
+    light.dev50_r1:
+      supported_color_modes:
+      - onoff
+      color_mode:
+      friendly_name: dev50_r1
+      supported_features: 0
+      state: 'off'
+    light.dev50_r7:
+      supported_color_modes:
+      - onoff
+      color_mode:
+      friendly_name: dev50_r7
+      supported_features: 0
+      state: 'off'
+    light.dev50_r4:
+      supported_color_modes:
+      - onoff
+      color_mode:
+      friendly_name: dev50_r4
+      supported_features: 0
+      state: 'off'
+    light.dev408:
+      supported_color_modes:
+      - onoff
+      color_mode:
+      friendly_name: dev408
+      supported_features: 0
+      state: 'off'
+    light.dev62:
+      supported_color_modes:
+      - onoff
+      color_mode:
+      friendly_name: dev62
+      supported_features: 0
+      state: 'off'
+    light.dev63:
+      supported_color_modes:
+      - onoff
+      color_mode:
+      friendly_name: dev63
+      supported_features: 0
+      state: 'off'
+    switch.dev401_relay1:
+      friendly_name: dev401 relay1
+      state: 'off'
+    switch.dev401_relay2:
+      friendly_name: dev401 relay2
+      state: 'off'
+    light.dev50_r3:
+      supported_color_modes:
+      - onoff
+      color_mode:
+      friendly_name: dev50_r3
+      supported_features: 0
+      state: 'off'
+    light.dev50_r6:
+      supported_color_modes:
+      - onoff
+      color_mode:
+      friendly_name: dev50_r6
+      supported_features: 0
+      state: 'off'
+    light.dev50_r5:
+      supported_color_modes:
+      - onoff
+      color_mode:
+      friendly_name: dev50_r5
+      supported_features: 0
+      state: 'off'
+  icon: mdi:garage
+  metadata:
+    light.dev50_r1:
+      entity_only: true
+    light.dev50_r7:
+      entity_only: true
+    light.dev50_r4:
+      entity_only: true
+    light.dev408:
+      entity_only: true
+    light.dev62:
+      entity_only: true
+    light.dev63:
+      entity_only: true
+    switch.dev401_relay1:
+      entity_only: true
+    switch.dev401_relay2:
+      entity_only: true
+    light.dev50_r3:
+      entity_only: true
+    light.dev50_r6:
+      entity_only: true
+    light.dev50_r5:
+      entity_only: true
+- id: '1730744575995'
+  name: Alarm Aus
+  entities:
+    light.dev406:
+      effect_list:
+      - Solid
+      - Wake up
+      - Cycle up
+      - Cycle down
+      - Random
+      supported_color_modes:
+      - hs
+      effect: Solid
+      color_mode: hs
+      brightness: 255
+      hs_color:
+      - 48
+      - 2
+      rgb_color:
+      - 255
+      - 253
+      - 249
+      xy_color:
+      - 0.328
+      - 0.333
+      friendly_name: dev406
+      supported_features: 36
+      state: 'on'
+    light.dev407:
+      effect_list:
+      - Solid
+      - Wake up
+      - Cycle up
+      - Cycle down
+      - Random
+      supported_color_modes:
+      - hs
+      effect: Solid
+      color_mode: hs
+      brightness: 255
+      hs_color:
+      - 48
+      - 2
+      rgb_color:
+      - 255
+      - 253
+      - 249
+      xy_color:
+      - 0.328
+      - 0.333
+      friendly_name: dev407
+      supported_features: 36
+      state: 'on'
+    light.dev400:
+      effect_list:
+      - Solid
+      - Wake up
+      - Cycle up
+      - Cycle down
+      - Random
+      supported_color_modes:
+      - hs
+      effect: Solid
+      color_mode: hs
+      brightness: 255
+      hs_color:
+      - 48
+      - 2
+      rgb_color:
+      - 255
+      - 253
+      - 249
+      xy_color:
+      - 0.328
+      - 0.333
+      friendly_name: dev400
+      supported_features: 36
+      state: 'on'
+  icon: mdi:alarm-light-outline
+  metadata: {}

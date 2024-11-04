@@ -1,22 +1,47 @@
 # Loads default set of integrations. Do not remove.
 default_config:
 
-
 # Load frontend themes from the themes folder
 frontend:
   themes: !include_dir_merge_named themes
 
-  
 automation: !include automations.yaml
 script: !include scripts.yaml
 scene: !include scenes.yaml
-
 
 # -----------------------SYSTEM------------------------------
 time_date:
   display_options:
     - "time"
+
+# -----------------------SYSTEM------------------------------
+yahoofinance:
+  symbols:
+    - AAPL
+    - GOOGL
+    - MSFT
+    - BKR
+    - SLB
+    - HAL
+    - BZ=F
+  scan_interval:
+    hours: 1
+  show_trending_icon: true
+
 # --------------------INTEGRATION----------------------------
+# Amazon Echo example configuration.yaml entry
+emulated_hue:
+  type: alexa
+  host_ip: 192.168.178.45
+  listen_port: 80
+  # Amazon Echo/Alexa stopped working on different ports.
+  # Search for "Philips Hue Bridge V1 (round)" in the Alexa App
+  # to discover devices.
+  expose_by_default: true
+  exposed_domains:
+    #- light
+    - scene
+    - script
 # -----------------------------------------------------------
 sensor:
   - platform: integration
@@ -24,6 +49,22 @@ sensor:
     name: energy_pv
     unit_prefix: k
     round: 2
+
+binary_sensor:
+  - platform: trend
+    sensors:
+      bkr_stock_trend:
+        entity_id: sensor.yahoofinance_bkr
+        sample_duration: 14400
+        min_gradient: 0.0001
+      slb_stock_trend:
+        entity_id: sensor.yahoofinance_slb
+        sample_duration: 14400
+        min_gradient: 0.0001
+      hal_stock_trend:
+        entity_id: sensor.yahoofinance_hal
+        sample_duration: 14400
+        min_gradient: 0.0001
 
 mqtt:
   - binary_sensor:
