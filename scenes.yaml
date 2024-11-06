@@ -1,35 +1,5 @@
-- id: '1727410045953'
-  name: Test an
-  entities:
-    light.dev406:
-      effect_list:
-      - Solid
-      - Wake up
-      - Cycle up
-      - Cycle down
-      - Random
-      supported_color_modes:
-      - hs
-      effect: Solid
-      color_mode: hs
-      brightness: 224
-      hs_color:
-      - 60
-      - 29
-      rgb_color:
-      - 255
-      - 255
-      - 181
-      xy_color:
-      - 0.373
-      - 0.407
-      friendly_name: dev406
-      supported_features: 36
-      state: 'on'
-  icon: mdi:lightbulb
-  metadata: {}
 - id: '1727410387771'
-  name: Garten Abend An
+  name: Gartenbeleuchtung An
   entities:
     light.dev50_r1:
       supported_color_modes:
@@ -61,7 +31,7 @@
     light.dev50_r4:
       entity_only: true
 - id: '1727410499639'
-  name: Garten Abend Aus
+  name: Gartenbeleuchtung Aus
   entities:
     light.dev50_r1:
       supported_color_modes:
@@ -92,72 +62,6 @@
       entity_only: true
     light.dev50_r4:
       entity_only: true
-- id: '1727636466377'
-  name: Test aus
-  entities:
-    light.dev406:
-      effect_list:
-      - Solid
-      - Wake up
-      - Cycle up
-      - Cycle down
-      - Random
-      supported_color_modes:
-      - hs
-      effect:
-      color_mode:
-      brightness:
-      hs_color:
-      rgb_color:
-      xy_color:
-      friendly_name: dev406
-      supported_features: 36
-      state: 'off'
-    light.dev407:
-      effect_list:
-      - Solid
-      - Wake up
-      - Cycle up
-      - Cycle down
-      - Random
-      supported_color_modes:
-      - hs
-      effect:
-      color_mode:
-      brightness:
-      hs_color:
-      rgb_color:
-      xy_color:
-      friendly_name: dev407
-      supported_features: 36
-      state: 'off'
-    light.dev400:
-      effect_list:
-      - Solid
-      - Wake up
-      - Cycle up
-      - Cycle down
-      - Random
-      supported_color_modes:
-      - hs
-      effect: Solid
-      color_mode: hs
-      brightness: 125
-      hs_color:
-      - 0
-      - 0
-      rgb_color:
-      - 255
-      - 255
-      - 255
-      xy_color:
-      - 0.323
-      - 0.329
-      friendly_name: dev400
-      supported_features: 36
-      state: 'on'
-  icon: mdi:lightbulb
-  metadata: {}
 - id: '1727668890190'
   name: Alarm Blau
   entities:
@@ -237,36 +141,6 @@
       supported_features: 36
       state: 'on'
   icon: mdi:alarm-light
-  metadata: {}
-- id: '1727668923860'
-  name: Test Rot
-  entities:
-    light.dev406:
-      effect_list:
-      - Solid
-      - Wake up
-      - Cycle up
-      - Cycle down
-      - Random
-      supported_color_modes:
-      - hs
-      effect: Solid
-      color_mode: hs
-      brightness: 255
-      hs_color:
-      - 1
-      - 89
-      rgb_color:
-      - 255
-      - 31
-      - 28
-      xy_color:
-      - 0.686
-      - 0.301
-      friendly_name: dev406
-      supported_features: 36
-      state: 'on'
-  icon: mdi:lightbulb
   metadata: {}
 - id: '1730697784286'
   name: Alarm Rot
@@ -619,4 +493,33 @@
       supported_features: 36
       state: 'on'
   icon: mdi:alarm-light-outline
+  metadata: {}
+- id: '1730782920933'
+  name: Neue Szene
+  entities:
+    light.dev406:
+      effect_list:
+      - Solid
+      - Wake up
+      - Cycle up
+      - Cycle down
+      - Random
+      supported_color_modes:
+      - hs
+      effect: Solid
+      color_mode: hs
+      brightness: 255
+      hs_color:
+      - 48
+      - 2
+      rgb_color:
+      - 255
+      - 253
+      - 249
+      xy_color:
+      - 0.328
+      - 0.333
+      friendly_name: dev406
+      supported_features: 36
+      state: 'on'
   metadata: {}

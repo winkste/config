@@ -1,55 +1,10 @@
-testskript:
-  alias: TestSkript
-  sequence:
-  - action: light.turn_on
-    metadata: {}
-    data:
-      rgb_color:
-      - 255
-      - 38
-      - 0
-      brightness_pct: 84
-    target:
-      device_id: b5972e59c85c07cb8bbc2882184ac591
-  - delay:
-      hours: 0
-      minutes: 0
-      seconds: 10
-      milliseconds: 0
-  - action: light.turn_off
-    metadata: {}
-    data: {}
-    target:
-      device_id: b5972e59c85c07cb8bbc2882184ac591
-  description: ''
-testscript2:
-  alias: TestScript2
-  sequence:
-  - repeat:
-      sequence:
-      - action: scene.turn_on
-        metadata: {}
-        target:
-          entity_id: scene.test_blau
-      - delay:
-          hours: 0
-          minutes: 0
-          seconds: 0
-          milliseconds: 500
-      - action: scene.turn_on
-        metadata: {}
-        target:
-          entity_id: scene.test_rot
-      - delay:
-          hours: 0
-          minutes: 0
-          seconds: 0
-          milliseconds: 500
-      count: 10
-  description: ''
 alarm:
   alias: Alarm
   sequence:
+  - action: scene.turn_on
+    metadata: {}
+    target:
+      entity_id: scene.aussenbeleuchtung_an
   - repeat:
       sequence:
       - action: scene.turn_on
@@ -70,7 +25,7 @@ alarm:
           minutes: 0
           seconds: 0
           milliseconds: 500
-      count: 10
+      count: 100
   - action: scene.turn_on
     metadata: {}
     target:
