@@ -38,11 +38,19 @@ emulated_hue:
   # Amazon Echo/Alexa stopped working on different ports.
   # Search for "Philips Hue Bridge V1 (round)" in the Alexa App
   # to discover devices.
-  expose_by_default: true
+  expose_by_default: false
   exposed_domains:
     #- light
-    - scene
-    - script
+    #- scene
+    #- script
+    #- automation
+    - input_boolean
+  entities:
+    input_boolean.garden_light_control:
+      name: "Garten"
+    light.dev50_r1:
+      name: "Relais50"
+
 # -----------------------------------------------------------
 sensor:
   - platform: integration

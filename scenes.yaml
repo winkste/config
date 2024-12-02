@@ -494,32 +494,3 @@
       state: 'on'
   icon: mdi:alarm-light-outline
   metadata: {}
-- id: '1730782920933'
-  name: Neue Szene
-  entities:
-    light.dev406:
-      effect_list:
-      - Solid
-      - Wake up
-      - Cycle up
-      - Cycle down
-      - Random
-      supported_color_modes:
-      - hs
-      effect: Solid
-      color_mode: hs
-      brightness: 255
-      hs_color:
-      - 48
-      - 2
-      rgb_color:
-      - 255
-      - 253
-      - 249
-      xy_color:
-      - 0.328
-      - 0.333
-      friendly_name: dev406
-      supported_features: 36
-      state: 'on'
-  metadata: {}

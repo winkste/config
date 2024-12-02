@@ -1,15 +1,44 @@
-- id: "1717915948870"
+- id: '1717915948870'
   alias: DailyBackupSynology
   description: Tägliches Backup auf Synology
   trigger:
-    - platform: time
-      at: "10:00:00"
+  - platform: time
+    at: '10:00:00'
   condition: []
   action:
-    - service: hassio.backup_full
-      metadata: {}
-      data:
-        compressed: true
-        homeassistant_exclude_database: false
-        location: Synology_backup
+  - service: hassio.backup_full
+    metadata: {}
+    data:
+      compressed: true
+      homeassistant_exclude_database: false
+      location: Synology_backup
+  mode: single
+- id: '1732770031256'
+  alias: GardenAutoLight
+  description: ''
+  triggers:
+  - trigger: state
+    entity_id:
+    - input_boolean.garden_light_control
+  conditions: []
+  actions:
+  - choose:
+    - conditions:
+      - condition: state
+        entity_id: input_boolean.garden_light_control
+        state: 'on'
+      sequence:
+      - action: scene.turn_on
+        metadata: {}
+        target:
+          entity_id: scene.garten_abend
+    - conditions:
+      - condition: state
+        entity_id: input_boolean.garden_light_control
+        state: 'off'
+      sequence:
+      - action: scene.turn_on
+        metadata: {}
+        target:
+          entity_id: scene.garten_abend_aus
   mode: single

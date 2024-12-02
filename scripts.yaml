@@ -31,3 +31,26 @@ alarm:
     target:
       entity_id: scene.alarm_aus
   description: ''
+garden_light:
+  alias: garden_light
+  sequence:
+  - if:
+    - condition: state
+      entity_id: input_boolean.garden_light_control
+      state: 'on'
+      for:
+        hours: 0
+        minutes: 0
+        seconds: 1
+    then:
+    - action: scene.turn_on
+      metadata: {}
+      target:
+        entity_id: scene.garten_abend
+    else:
+    - action: scene.turn_on
+      metadata: {}
+      target:
+        entity_id: scene.garten_abend_aus
+  description: ''
+  icon: mdi:shovel
