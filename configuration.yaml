@@ -17,6 +17,9 @@ time_date:
 
 api:
 
+recorder:
+  db_url: mysql://homeassistant:sw10950@core-mariadb/homeassistant?charset=utf8mb4
+
 # -----------------------SYSTEM------------------------------
 yahoofinance:
   symbols:
