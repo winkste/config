@@ -1,294 +1,334 @@
 - binary_sensor:
-    name: "dev05_motion"
-    state_topic: "std/dev05/s/pir/status"
+    name: dev05_motion
+    state_topic: std/dev05/s/pir/status
     device_class: motion
+    unique_id: dev05_motion
 - binary_sensor:
-    name: "dev62_motion"
-    state_topic: "std/dev62/s/pir/status"
+    name: dev62_motion
+    state_topic: std/dev62/s/pir/status
     device_class: motion
+    unique_id: dev62_motion
 - binary_sensor:
-    name: "dev63_motion"
-    state_topic: "std/dev63/s/pir/status"
+    name: dev63_motion
+    state_topic: std/dev63/s/pir/status
     device_class: motion
+    unique_id: dev63_motion
 - binary_sensor:
-    name: "dev71_motion"
-    state_topic: "std/dev71/s/pir/status"
+    name: dev71_motion
+    state_topic: std/dev71/s/pir/status
     device_class: motion
+    unique_id: dev71_motion
 - binary_sensor:
-    name: "dev301_garb_rest"
-    state_topic: "std/dev301/s/garbage/rest"
+    name: dev301_garb_rest
+    state_topic: std/dev301/s/garbage/rest
+    unique_id: dev301_garb_rest
 - binary_sensor:
-    name: "dev301_garb_paper"
-    state_topic: "std/dev301/s/garbage/paper"
+    name: dev301_garb_paper
+    state_topic: std/dev301/s/garbage/paper
+    unique_id: dev301_garb_paper
 - binary_sensor:
-    name: "dev301_garb_plastic"
-    state_topic: "std/dev301/s/garbage/plastic"
+    name: dev301_garb_plastic
+    state_topic: std/dev301/s/garbage/plastic
+    unique_id: dev301_garb_plastic
 - binary_sensor:
-    name: "dev301_garb_organic"
-    state_topic: "std/dev301/s/garbage/organic"
-# --------------------------------------------------
+    name: dev301_garb_organic
+    state_topic: std/dev301/s/garbage/organic
+    unique_id: dev301_garb_organic
 - light:
-    name: "dev01"
-    state_topic: "std/dev01/s/so_basic/status"
-    command_topic: "std/dev01/r/so_basic/switch"
+    name: dev01
+    state_topic: std/dev01/s/so_basic/status
+    command_topic: std/dev01/r/so_basic/switch
     qos: 0
-    payload_on: "ON"
-    payload_off: "OFF"
+    payload_on: 'ON'
+    payload_off: 'OFF'
     optimistic: false
+    unique_id: dev01
 - light:
-    name: "dev04"
-    state_topic: "std/dev04/s/so_basic/status"
-    command_topic: "std/dev04/r/so_basic/switch"
+    name: dev04
+    state_topic: std/dev04/s/so_basic/status
+    command_topic: std/dev04/r/so_basic/switch
     qos: 0
-    payload_on: "ON"
-    payload_off: "OFF"
+    payload_on: 'ON'
+    payload_off: 'OFF'
     optimistic: false
+    unique_id: dev04
 - light:
-    name: "dev05"
-    state_topic: "std/dev05/s/so_basic/status"
-    command_topic: "std/dev05/r/so_basic/switch"
+    name: dev05
+    state_topic: std/dev05/s/so_basic/status
+    command_topic: std/dev05/r/so_basic/switch
     qos: 0
-    payload_on: "ON"
-    payload_off: "OFF"
+    payload_on: 'ON'
+    payload_off: 'OFF'
     optimistic: false
+    unique_id: dev05
 - light:
-    name: "dev50_r1"
-    state_topic: "std/dev50/s/relay_one/status"
-    command_topic: "std/dev50/r/relay_one/switch"
+    name: dev50_r1
+    state_topic: std/dev50/s/relay_one/status
+    command_topic: std/dev50/r/relay_one/switch
     qos: 0
-    payload_on: "ON"
-    payload_off: "OFF"
+    payload_on: 'ON'
+    payload_off: 'OFF'
     optimistic: false
+    unique_id: dev50_r1
 - light:
-    name: "dev50_r2"
-    state_topic: "std/dev50/s/relay_two/status"
-    command_topic: "std/dev50/r/relay_two/switch"
+    name: dev50_r2
+    state_topic: std/dev50/s/relay_two/status
+    command_topic: std/dev50/r/relay_two/switch
     qos: 0
-    payload_on: "ON"
-    payload_off: "OFF"
+    payload_on: 'ON'
+    payload_off: 'OFF'
     optimistic: false
+    unique_id: dev50_r2
 - light:
-    name: "dev50_r3"
-    state_topic: "std/dev50/s/relay_three/status"
-    command_topic: "std/dev50/r/relay_three/switch"
+    name: dev50_r3
+    state_topic: std/dev50/s/relay_three/status
+    command_topic: std/dev50/r/relay_three/switch
     qos: 0
-    payload_on: "ON"
-    payload_off: "OFF"
+    payload_on: 'ON'
+    payload_off: 'OFF'
     optimistic: false
+    unique_id: dev50_r3
 - light:
-    name: "dev50_r4"
-    state_topic: "std/dev50/s/relay_four/status"
-    command_topic: "std/dev50/r/relay_four/switch"
+    name: dev50_r4
+    state_topic: std/dev50/s/relay_four/status
+    command_topic: std/dev50/r/relay_four/switch
     qos: 0
-    payload_on: "ON"
-    payload_off: "OFF"
+    payload_on: 'ON'
+    payload_off: 'OFF'
     optimistic: false
+    unique_id: dev50_r4
 - light:
-    name: "dev50_r5"
-    state_topic: "std/dev50/s/relay_five/status"
-    command_topic: "std/dev50/r/relay_five/switch"
+    name: dev50_r5
+    state_topic: std/dev50/s/relay_five/status
+    command_topic: std/dev50/r/relay_five/switch
     qos: 0
-    payload_on: "ON"
-    payload_off: "OFF"
+    payload_on: 'ON'
+    payload_off: 'OFF'
     optimistic: false
+    unique_id: dev50_r5
 - light:
-    name: "dev50_r6"
-    state_topic: "std/dev50/s/relay_six/status"
-    command_topic: "std/dev50/r/relay_six/switch"
+    name: dev50_r6
+    state_topic: std/dev50/s/relay_six/status
+    command_topic: std/dev50/r/relay_six/switch
     qos: 0
-    payload_on: "ON"
-    payload_off: "OFF"
+    payload_on: 'ON'
+    payload_off: 'OFF'
     optimistic: false
+    unique_id: dev50_r6
 - light:
-    name: "dev50_r7"
-    state_topic: "std/dev50/s/relay_seven/status"
-    command_topic: "std/dev50/r/relay_seven/switch"
+    name: dev50_r7
+    state_topic: std/dev50/s/relay_seven/status
+    command_topic: std/dev50/r/relay_seven/switch
     qos: 0
-    payload_on: "ON"
-    payload_off: "OFF"
+    payload_on: 'ON'
+    payload_off: 'OFF'
     optimistic: false
-- light: ### garden control station 50
-    name: "dev50_r8"
-    state_topic: "std/dev50/s/relay_eight/status"
-    command_topic: "std/dev50/r/relay_eight/switch"
+    unique_id: dev50_r7
+- light:
+    name: dev50_r8
+    state_topic: std/dev50/s/relay_eight/status
+    command_topic: std/dev50/r/relay_eight/switch
     qos: 0
-    payload_on: "ON"
-    payload_off: "OFF"
+    payload_on: 'ON'
+    payload_off: 'OFF'
     optimistic: false
-- light: ### light 62 carport outside
-    name: "dev62"
-    state_topic: "std/dev62/s/so_basic/status"
-    command_topic: "std/dev62/r/so_basic/switch"
+    unique_id: dev50_r8
+- light:
+    name: dev62
+    state_topic: std/dev62/s/so_basic/status
+    command_topic: std/dev62/r/so_basic/switch
     qos: 0
-    payload_on: "ON"
-    payload_off: "OFF"
+    payload_on: 'ON'
+    payload_off: 'OFF'
     optimistic: false
-- light: ### garden house
-    name: "dev63"
-    state_topic: "std/dev63/s/so_basic/status"
-    command_topic: "std/dev63/r/so_basic/switch"
+    unique_id: dev62
+- light:
+    name: dev63
+    state_topic: std/dev63/s/so_basic/status
+    command_topic: std/dev63/r/so_basic/switch
     qos: 0
-    payload_on: "ON"
-    payload_off: "OFF"
+    payload_on: 'ON'
+    payload_off: 'OFF'
     optimistic: false
-- light: ### flur
-    name: "dev70"
-    state_topic: "std/dev70/s/light_one/status"
-    command_topic: "std/dev70/r/light_one/switch"
-    rgb_state_topic: "std/dev70/s/light_one/color"
-    rgb_command_topic: "std/dev70/r/light_one/color"
-    brightness_state_topic: "std/dev70/s/light_one/brightness"
-    brightness_command_topic: "std/dev70/r/light_one/brightness"
-    retain: True
+    unique_id: dev63
+- light:
+    name: dev70
+    state_topic: std/dev70/s/light_one/status
+    command_topic: std/dev70/r/light_one/switch
+    rgb_state_topic: std/dev70/s/light_one/color
+    rgb_command_topic: std/dev70/r/light_one/color
+    brightness_state_topic: std/dev70/s/light_one/brightness
+    brightness_command_topic: std/dev70/r/light_one/brightness
+    retain: true
     qos: 0
-    payload_on: "ON"
-    payload_off: "OFF"
+    payload_on: 'ON'
+    payload_off: 'OFF'
     optimistic: false
     brightness_scale: 99
-- light: ### Carport work room
-    name: "dev71"
-    state_topic: "std/dev71/s/light_one/status"
-    command_topic: "std/dev71/r/light_one/switch"
-    rgb_state_topic: "std/dev71/s/light_one/color"
-    rgb_command_topic: "std/dev71/r/light_one/color"
-    brightness_state_topic: "std/dev71/s/light_one/brightness"
-    brightness_command_topic: "std/dev71/r/light_one/brightness"
-    retain: True
+    unique_id: dev70
+- light:
+    name: dev71
+    state_topic: std/dev71/s/light_one/status
+    command_topic: std/dev71/r/light_one/switch
+    rgb_state_topic: std/dev71/s/light_one/color
+    rgb_command_topic: std/dev71/r/light_one/color
+    brightness_state_topic: std/dev71/s/light_one/brightness
+    brightness_command_topic: std/dev71/r/light_one/brightness
+    retain: true
     qos: 0
-    payload_on: "ON"
-    payload_off: "OFF"
+    payload_on: 'ON'
+    payload_off: 'OFF'
     optimistic: false
     brightness_scale: 99
-- light: ### H801 LED ctrl channel 1: furniture living room
-    name: "dev80_l1"
-    state_topic: "std/dev80/s/light_one/status"
-    command_topic: "std/dev80/r/light_one/switch"
-    brightness_state_topic: "std/dev80/s/light_one/brightness"
-    brightness_command_topic: "std/dev80/r/light_one/brightness"
-    retain: True
+    unique_id: dev71
+- light:
+    name: dev80_l1
+    state_topic: std/dev80/s/light_one/status
+    command_topic: std/dev80/r/light_one/switch
+    brightness_state_topic: std/dev80/s/light_one/brightness
+    brightness_command_topic: std/dev80/r/light_one/brightness
+    retain: true
     qos: 0
-    payload_on: "ON"
-    payload_off: "OFF"
+    payload_on: 'ON'
+    payload_off: 'OFF'
     optimistic: false
     brightness_scale: 99
-- light: ### H801 LED ctrl channel 2: furniture living room
-    name: "dev80_l2"
-    state_topic: "std/dev80/s/light_two/status"
-    command_topic: "std/dev80/r/light_two/switch"
-    brightness_state_topic: "std/dev80/s/light_two/brightness"
-    brightness_command_topic: "std/dev80/r/light_two/brightness"
-    retain: True
+    unique_id: dev80_l1
+- light:
+    name: dev80_l2
+    state_topic: std/dev80/s/light_two/status
+    command_topic: std/dev80/r/light_two/switch
+    brightness_state_topic: std/dev80/s/light_two/brightness
+    brightness_command_topic: std/dev80/r/light_two/brightness
+    retain: true
     qos: 0
-    payload_on: "ON"
-    payload_off: "OFF"
+    payload_on: 'ON'
+    payload_off: 'OFF'
     optimistic: false
     brightness_scale: 99
-- light: ### H801 LED ctrl channel 3: furniture living room
-    name: "dev80_l3"
-    state_topic: "std/dev80/s/light_three/status"
-    command_topic: "std/dev80/r/light_three/switch"
-    brightness_state_topic: "std/dev80/s/light_three/brightness"
-    brightness_command_topic: "std/dev80/r/light_three/brightness"
-    retain: True
+    unique_id: dev80_l2
+- light:
+    name: dev80_l3
+    state_topic: std/dev80/s/light_three/status
+    command_topic: std/dev80/r/light_three/switch
+    brightness_state_topic: std/dev80/s/light_three/brightness
+    brightness_command_topic: std/dev80/r/light_three/brightness
+    retain: true
     qos: 0
-    payload_on: "ON"
-    payload_off: "OFF"
+    payload_on: 'ON'
+    payload_off: 'OFF'
     optimistic: false
     brightness_scale: 99
-#--------------------------------------
+    unique_id: dev80_l3
 - switch:
-    state_topic: "std/dev102/s/0/switch"
-    command_topic: "std/dev102/s/0/switch/cmd"
-    name: "dev102_switch"
+    state_topic: std/dev102/s/0/switch
+    command_topic: std/dev102/s/0/switch/cmd
+    name: dev102_switch
+    unique_id: dev102_switch
 - switch:
-    state_topic: "std/dev101/s/0/switch"
-    command_topic: "std/dev101/s/0/switch/cmd"
-    name: "dev101_switch"
-
-# --------------- MQTT --------------------------------------
-# ------------------DEV 24-----------------------------------
+    state_topic: std/dev101/s/0/switch
+    command_topic: std/dev101/s/0/switch/cmd
+    name: dev101_switch
+    unique_id: dev101_switch
 - sensor:
-    state_topic: "dev24/#"
-    name: "dev24"
+    state_topic: dev24/#
+    name: dev24
+    unique_id: dev24
 - sensor:
-    state_topic: "std/dev24/s/temp_hum/temp"
-    name: "dev24_temperature_dht"
-    unit_of_measurement: "ºC"
-
+    state_topic: std/dev24/s/temp_hum/temp
+    name: dev24_temperature_dht
+    unit_of_measurement: ºC
+    unique_id: dev24_temperature_dht
 - sensor:
-    state_topic: "std/dev24/s/temp_hum/hum"
-    name: "dev24_humidity_dht"
-    unit_of_measurement: "%"
-# ------------------DEV 28-----------------------------------
+    state_topic: std/dev24/s/temp_hum/hum
+    name: dev24_humidity_dht
+    unit_of_measurement: '%'
+    unique_id: dev24_humidity_dht
 - sensor:
-    state_topic: "dev28/#"
-    name: "dev28"
+    state_topic: dev28/#
+    name: dev28
+    unique_id: dev28
 - sensor:
-    state_topic: "std/dev28/s/temp_hum/temp"
-    name: "dev28_temperature_dht"
-    unit_of_measurement: "ºC"
+    state_topic: std/dev28/s/temp_hum/temp
+    name: dev28_temperature_dht
+    unit_of_measurement: ºC
+    unique_id: dev28_temperature_dht
 - sensor:
-    state_topic: "std/dev28/s/temp_hum/hum"
-    name: "dev28_humidity_dht"
-    unit_of_measurement: "%"
+    state_topic: std/dev28/s/temp_hum/hum
+    name: dev28_humidity_dht
+    unit_of_measurement: '%'
+    unique_id: dev28_humidity_dht
 - sensor:
-    state_topic: "std/dev28/s/temp_hum/temp1"
-    name: "dev28_temperature_dht1"
-    unit_of_measurement: "ºC"
+    state_topic: std/dev28/s/temp_hum/temp1
+    name: dev28_temperature_dht1
+    unit_of_measurement: ºC
+    unique_id: dev28_temperature_dht1
 - sensor:
-    state_topic: "std/dev28/s/temp_hum/hum1"
-    name: "dev28_humidity_dht1"
-    unit_of_measurement: "%"
-# -----------------------------------------------------------
+    state_topic: std/dev28/s/temp_hum/hum1
+    name: dev28_humidity_dht1
+    unit_of_measurement: '%'
+    unique_id: dev28_humidity_dht1
 - sensor:
-    state_topic: "dev71/#"
-    name: "dev71"
+    state_topic: dev71/#
+    name: dev71
+    unique_id: dev71
 - sensor:
-    state_topic: "std/dev71/s/temp_hum/temp"
-    name: "dev71_temperature_dht"
-    unit_of_measurement: "ºC"
+    state_topic: std/dev71/s/temp_hum/temp
+    name: dev71_temperature_dht
+    unit_of_measurement: ºC
+    unique_id: dev71_temperature_dht
 - sensor:
-    state_topic: "std/dev71/s/temp_hum/hum"
-    name: "dev71_humidity_dht"
-    unit_of_measurement: "%"
+    state_topic: std/dev71/s/temp_hum/hum
+    name: dev71_humidity_dht
+    unit_of_measurement: '%'
+    unique_id: dev71_humidity_dht
 - sensor:
-    state_topic: "std/dev71/s/temt6000/raw"
-    name: "dev71_brightness_temt6000"
-    unit_of_measurement: "raw"
+    state_topic: std/dev71/s/temt6000/raw
+    name: dev71_brightness_temt6000
+    unit_of_measurement: raw
+    unique_id: dev71_brightness_temt6000
 - sensor:
-    state_topic: "std/dev71/s/health/tic"
-    name: "dev71_health_tic"
-    unit_of_measurement: "cnt"
-# -----------------------------------------------------------
+    state_topic: std/dev71/s/health/tic
+    name: dev71_health_tic
+    unit_of_measurement: cnt
+    unique_id: dev71_health_tic
 - sensor:
-    state_topic: "dev300/#"
-    name: "dev300"
+    state_topic: dev300/#
+    name: dev300
+    unique_id: dev300
 - sensor:
-    state_topic: "std/dev300/s/hb/heart_beat"
-    name: "dev300_heart_beat"
-    unit_of_measurement: "cnt"
+    state_topic: std/dev300/s/hb/heart_beat
+    name: dev300_heart_beat
+    unit_of_measurement: cnt
+    unique_id: dev300_heart_beat
 - sensor:
-    state_topic: "std/dev300/s/hb/time_now"
-    name: "dev300_time_now"
+    state_topic: std/dev300/s/hb/time_now
+    name: dev300_time_now
+    unique_id: dev300_time_now
 - sensor:
-    state_topic: "std/dev300/s/hb/ts_now"
-    name: "dev300_ts_now"
-# -----------------------------------------------------------
+    state_topic: std/dev300/s/hb/ts_now
+    name: dev300_ts_now
+    unique_id: dev300_ts_now
 - sensor:
-    state_topic: "dev301/#"
-    name: "dev301"
+    state_topic: dev301/#
+    name: dev301
+    unique_id: dev301
 - sensor:
-    state_topic: "std/dev301/s/ener_wat/gas"
-    name: "dev301_gas"
-    unit_of_measurement: "qm"
+    state_topic: std/dev301/s/ener_wat/gas
+    name: dev301_gas
+    unit_of_measurement: qm
+    unique_id: dev301_gas
 - sensor:
-    state_topic: "std/dev301/s/ener_wat/power"
-    name: "dev301_power"
-    unit_of_measurement: "kWh"
+    state_topic: std/dev301/s/ener_wat/power
+    name: dev301_power
+    unit_of_measurement: kWh
+    unique_id: dev301_power
 - sensor:
-    state_topic: "std/dev301/s/ener_wat/water"
-    name: "dev301_water"
-    unit_of_measurement: "qm"
+    state_topic: std/dev301/s/ener_wat/water
+    name: dev301_water
+    unit_of_measurement: qm
+    unique_id: dev301_water
 - sensor:
-    state_topic: "std/dev301/s/ener_wat/date"
-    name: "dev301_date"
+    state_topic: std/dev301/s/ener_wat/date
+    name: dev301_date
+    unique_id: dev301_date
