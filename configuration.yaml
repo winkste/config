@@ -18,7 +18,7 @@ time_date:
 api:
 
 recorder:
-  db_url: mysql://homeassistant:sw10950@core-mariadb/homeassistant?charset=utf8mb4
+  db_url: !secret recorder_db_url
 
 # -----------------------SYSTEM------------------------------
 yahoofinance:

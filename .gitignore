@@ -15,3 +15,7 @@
 /secrets.yaml
 /tts
 /www
+/zigbee.db
+/zigbee.db-shm
+/zigbee.db-wal
+.DS_Store
